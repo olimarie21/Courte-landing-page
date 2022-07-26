@@ -14,7 +14,7 @@ export const SectionTitle = styled.h4`
 	color: ${globalColor.primary};
 	font-size: 18px;
 	font-weight: 600;
-	margin: 32px 0 16px 0;
+	margin: 0;
 `
 
 export const HeadLine = styled.h1`
