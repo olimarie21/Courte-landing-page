@@ -8,14 +8,54 @@ import {
 	globalColor,
 } from '../shared/Style'
 
-export const ImageContainer = styled.div`
-	background-color: ${(props) =>
-		props.secondary === 'Explore'
-			? globalColor.lightOrange
-			: globalColor.secondary === 'Play'
-			? globalColor.lightGreen
-			: globalColor.lightRed};
-	width: 342px;
+const Feature = (props) => {
+	const { featureTitle, featureHeadline, featureDescription, featureImg } =
+		props
+	return (
+		<FeatureContainer>
+			<ImageContainer secondary={featureTitle}>
+				<Image
+					src={featureImg}
+					alt='feature'
+					width={'342px'}
+					height={'314px'}
+					objectPosition={'center'}
+					quality={100}
+				/>
+			</ImageContainer>
+			<InfoContainer>
+				<SectionContainer>
+					<Image
+						src={'/images/explore.svg'}
+						alt='explore'
+						height={24}
+						width={24}
+					/>
+					<SectionTitle>{featureTitle}</SectionTitle>
+				</SectionContainer>
+				<HeadLine>{featureHeadline}</HeadLine>
+				<DescriptiveText>{featureDescription}</DescriptiveText>
+			</InfoContainer>
+		</FeatureContainer>
+	)
+}
+
+const ImageContainer = styled.div`
+	background-color: ${(props) => {
+		switch (props.secondary) {
+			case 'Explore':
+				return globalColor.lightOrange
+			case 'Play':
+				return globalColor.lightGreen
+			case 'Match':
+				return globalColor.lightRed
+		}
+	}};
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 450px;
+	max-height: 314px;
 	height: 314px;
 	border-radius: 6px;
 	position: relative;
@@ -25,12 +65,13 @@ export const ImageContainer = styled.div`
 	}
 `
 
-export const FeatureContainer = styled.div`
+const FeatureContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	margin: 120px 24px;
 	@media (min-width: 800px) {
 		flex-direction: row;
+		align-items: center;
 	}
 `
 
@@ -44,28 +85,15 @@ const InfoContainer = styled.div`
 	max-height: 395px;
 `
 
-const Feature = (props) => {
-	const { featureTitle, featureHeadline, featureDescription, featureImg } =
-		props
-	return (
-		<FeatureContainer>
-			<ImageContainer secondary={featureTitle}>
-				<Image
-					src={featureImg}
-					alt='feature'
-					width={'342px'}
-					height={'314px'}
-					layout='fill'
-					quality={100}
-				/>
-			</ImageContainer>
-			<InfoContainer>
-				<SectionTitle>{featureTitle}</SectionTitle>
-				<HeadLine>{featureHeadline}</HeadLine>
-				<DescriptiveText>{featureDescription}</DescriptiveText>
-			</InfoContainer>
-		</FeatureContainer>
-	)
-}
+const SectionContainer = styled.div`
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	margin: 32px 0 16px 0;
+	gap: 10px;
+	@media screen and (min-width: 800px) {
+		margin-top: 0;
+	}
+`
 
 export default Feature
