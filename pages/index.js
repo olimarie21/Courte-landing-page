@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Feature from '../components/Feature'
 import styles from '../styles/Home.module.css'
 import styled from 'styled-components'
+import Header from '../components/Header'
 
 export default function Home() {
 	return (
@@ -14,6 +15,7 @@ export default function Home() {
 				/>
 				<link rel='icon' href='/CourteIcon.ico' />
 			</Head>
+			<Header />
 
 			<Test>
 				<Feature
@@ -40,12 +42,13 @@ export default function Home() {
 }
 
 const Container = styled.div`
-	padding: 0 6.2vw;
+	padding: 0;
 	width: 100%;
 	height: 100vh;
 `
 const Test = styled.main`
 	font-weight: 700;
+	max-width: 900px;
 
 	p {
 		margin: 0;
