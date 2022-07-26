@@ -8,24 +8,6 @@ import {
 	globalColor,
 } from '../shared/Style'
 
-export const ImageContainer = styled.div`
-	background-color: ${(props) =>
-		props.secondary === 'Explore'
-			? globalColor.lightOrange
-			: globalColor.secondary === 'Play'
-			? globalColor.lightGreen
-			: globalColor.lightRed};
-	width: 342px;
-	height: 314px;
-	border-radius: 6px;
-`
-
-export const FeatureContainer = styled.div`
-	display: flex;
-	flex-direction: column;
-	margin: 120px 24px;
-`
-
 const Feature = (props) => {
 	const { featureTitle, featureHeadline, featureDescription, featureImg } =
 		props
@@ -45,5 +27,23 @@ const Feature = (props) => {
 		</FeatureContainer>
 	)
 }
+
+export const ImageContainer = styled.div`
+	background-color: ${(props) =>
+		props.secondary === 'Explore'
+			? globalColor.lightOrange
+			: globalColor.secondary === 'Play'
+			? globalColor.lightGreen
+			: globalColor.lightRed};
+	width: 342px;
+	height: 314px;
+	border-radius: 6px;
+`
+
+export const FeatureContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+	margin: 120px 24px;
+`
 
 export default Feature
