@@ -11,8 +11,9 @@ import {
 const Feature = (props) => {
 	const { featureTitle, featureHeadline, featureDescription, featureImg } =
 		props
+
 	return (
-		<FeatureContainer>
+		<FeatureContainer secondary={featureTitle}>
 			<ImageContainer secondary={featureTitle}>
 				<Image
 					src={featureImg}
@@ -20,10 +21,11 @@ const Feature = (props) => {
 					width={'342px'}
 					height={'314px'}
 					objectPosition={'center'}
+					objectFit={'cover'}
 					quality={100}
 				/>
 			</ImageContainer>
-			<InfoContainer>
+			<InfoContainer secondary={featureTitle}>
 				<SectionContainer>
 					<Image
 						src={'/images/explore.svg'}
@@ -70,7 +72,14 @@ const FeatureContainer = styled.div`
 	flex-direction: column;
 	margin: 120px 24px;
 	@media (min-width: 800px) {
-		flex-direction: row;
+		flex-direction: row-reverse;
+		flex-direction: ${(props) => {
+			if (props.secondary === 'Play') {
+				return 'row-reverse'
+			} else {
+				return 'row'
+			}
+		}};
 		align-items: center;
 	}
 `
@@ -79,7 +88,20 @@ const InfoContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	@media (min-width: 800px) {
-		margin-left: 42px;
+		margin-left: ${(props) => {
+			if (props.secondary === 'Play') {
+				return '0px'
+			} else {
+				return '42px'
+			}
+		}};
+		margin-right: ${(props) => {
+			if (props.secondary === 'Play') {
+				return '42px'
+			} else {
+				return '0px'
+			}
+		}};
 	}
 	max-width: 430px;
 	max-height: 395px;
