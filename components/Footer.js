@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <FooterWrapper>
             <h1 className="footerTitle">
-                We made Courte happen.
+                We made Courte happen.{'window' > '800px' ? <br /> : null}
                 Can you imagine what else can we create?
             </h1>
 
@@ -29,8 +29,12 @@ const FooterWrapper = styled.div`
     padding-right: 6.2vw;
     padding-left: 6.2vw;
     background-color: ${globalColor.grey100};
-    width: 100vw;
     margin-top: 8.6vh;
+
+    @media screen and (min-width:800px) {
+        padding-right: 14.9vw;
+        padding-left: 14.9vw;
+    }
 
     .footerTitle{
         color: ${globalColor.grey0};

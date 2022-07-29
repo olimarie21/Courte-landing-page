@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import Hero from '../components/Hero'
 import About from '../components/About'
 import Footer from '../components/Footer'
+import Team from '../components/Team'
 
 export default function Home() {
   return (
@@ -22,21 +23,16 @@ export default function Home() {
 
         <Hero />
         <About />
-
+        <Team />
       </Container>
       <Footer />
     </div>
   )
 }
 const Container = styled.div`
-    padding: 0 6.2vw;
-    width: 100vw;
-    min-height: 100vh;
-`
-const Test = styled.main`
-	font-weight: 700;
+  padding: 0 6.2vw;
 
-	p {
-		margin: 0;
-	}
+  @media screen and (min-width: 800px) {
+    padding: 0 14.9vw;
+  }
 `
