@@ -23,7 +23,7 @@ const Team = () => {
 
             <TeamContainer>
                 {/* Bruna */}
-                <div className="card">
+                <div className="card" >
                     <Image className="image" src={bruna} alt="Bruna Weiss" />
                     <Link href="https://www.linkedin.com/in/brunaweiss/">
                         <a className="linkedin" target="_blank">
@@ -191,7 +191,7 @@ const TeamContainer = styled.div`
         flex-wrap: wrap;
         align-items: flex-start;
         justify-content: flex-start;
-        gap:3.9vh;
+        gap:2.4rem;
     }
 
     .card{

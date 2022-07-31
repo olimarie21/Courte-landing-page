@@ -47,7 +47,7 @@ const HeroWrapper = styled.div`
         justify-content: center;
 
         @media screen and (min-width:800px) {
-            
+            height: 100%;
             width: 33.6vw;
         }
 
