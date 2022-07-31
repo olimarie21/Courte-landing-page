@@ -18,7 +18,7 @@ const About = () => {
                     In-person arrangements to share public tennis courts is not practical. Courte is here to help make using and sharing the court as easy as the press of a button.
                 </DescriptiveText>
                 <div className="buttonWrapper">
-                    <a href="#about">
+                    <a href="https://drive.google.com/file/d/1XQgTxRATp4E8i65Dc6P9IMJRDuY_sOr-/view" rel="noreferrer" target="_blank">
                         <button className="button">
                             <h3>View proposal</h3>
                         </button>
