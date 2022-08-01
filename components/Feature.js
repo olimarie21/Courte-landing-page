@@ -70,7 +70,7 @@ const ImageContainer = styled.div`
 const FeatureContainer = styled.div`
 	display: flex;
 	flex-direction: column;
-	margin: 120px 24px;
+	margin: 0 24px 120px 24px;
 	@media (min-width: 800px) {
 		flex-direction: row-reverse;
 		flex-direction: ${(props) => {
