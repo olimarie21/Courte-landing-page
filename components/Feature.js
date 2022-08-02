@@ -56,7 +56,7 @@ const ImageContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	max-width: 450px;
+	// max-width: 450px;
 	max-height: 314px;
 	height: 314px;
 	border-radius: 6px;
@@ -71,15 +71,16 @@ const FeatureContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	margin: 0 0 120px 0;
+	text-align: left;
 	@media (min-width: 800px) {
 		flex-direction: row-reverse;
 		flex-direction: ${(props) => {
-		if (props.secondary === 'Play') {
-			return 'row-reverse'
-		} else {
-			return 'row'
-		}
-	}};
+			if (props.secondary === 'Play') {
+				return 'row-reverse'
+			} else {
+				return 'row'
+			}
+		}};
 		align-items: center;
 	}
 `
@@ -89,19 +90,19 @@ const InfoContainer = styled.div`
 	flex-direction: column;
 	@media (min-width: 800px) {
 		margin-left: ${(props) => {
-		if (props.secondary === 'Play') {
-			return '0px'
-		} else {
-			return '42px'
-		}
-	}};
+			if (props.secondary === 'Play') {
+				return '0px'
+			} else {
+				return '42px'
+			}
+		}};
 		margin-right: ${(props) => {
-		if (props.secondary === 'Play') {
-			return '42px'
-		} else {
-			return '0px'
-		}
-	}};
+			if (props.secondary === 'Play') {
+				return '42px'
+			} else {
+				return '0px'
+			}
+		}};
 	}
 	max-width: 430px;
 	max-height: 395px;

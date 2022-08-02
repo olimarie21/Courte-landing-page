@@ -32,6 +32,8 @@ const Container = styled.div`
 	margin-top: 120px;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 `
 
 export default FeatureContainer

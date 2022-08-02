@@ -8,44 +8,45 @@ import Header from '../components/Header'
 import FeatureContainer from '../components/FeatureContainer'
 
 export default function Home() {
-  return (
-    <Container>
-      <Head>
-        <title>Courte</title>
-        <meta
-          name='description'
-          content='Discover a better way to play tennis'
-        />
-        <link rel='icon' href='/CourteIcon.ico' />
-      </Head>
+	return (
+		<Container>
+			<Head>
+				<title>Courte</title>
+				<meta
+					name='description'
+					content='Discover a better way to play tennis'
+				/>
+				<link rel='icon' href='/CourteIcon.ico' />
+			</Head>
 
-      <Wrapper>
-        <Header />
-        <Hero />
-        <FeatureContainer />
-        <About />
-        <Team />
-      </Wrapper>
-      <Footer />
-    </Container>
-  )
+			<Wrapper>
+				<Header />
+				<Hero />
+				<FeatureContainer />
+				<About />
+				<Team />
+			</Wrapper>
+			<Footer />
+		</Container>
+	)
 }
 
 const Wrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding-right: 6.2vw;
-    padding-left: 6.2vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	padding-right: 6.2vw;
+	padding-left: 6.2vw;
+	text-align: left;
 
-    @media screen and (min-width:800px) {
-        padding-right: 14.9vw;
-        padding-left: 14.9vw;
-    }
+	@media screen and (min-width: 800px) {
+		padding-right: 14.9vw;
+		padding-left: 14.9vw;
+	}
 `
 
 const Container = styled.div`
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 `
