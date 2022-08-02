@@ -146,6 +146,7 @@ const Team = () => {
 }
 
 const TeamWrapper = styled.div`
+max-width: 900px;
     display: flex;
     flex-direction: column;
     align-items: center;

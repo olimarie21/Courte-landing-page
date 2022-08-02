@@ -35,6 +35,7 @@ const HeroWrapper = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 4.6vh;
+    max-width: 900px;
 
     @media screen and (min-width:800px) {
         margin-top: 9.1vh;

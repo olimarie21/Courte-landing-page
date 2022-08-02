@@ -76,7 +76,7 @@ const AboutWrapper = styled.div`
         margin-top: 6.2vh;
 
         @media screen and (min-width:800px) {
-            width: 44vw;
+            max-width: 391px;
         }
 
         .headLine{
