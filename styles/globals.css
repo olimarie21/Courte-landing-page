@@ -1,12 +1,16 @@
 html,
 body {
-  font-family: 'Outfit';
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    font-family: "Outfit";
+    min-width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+html {
+    background: #ffffff;
 }
 
 a {
@@ -16,4 +20,9 @@ a {
 
 html {
     background: #fff;
+}
+
+#__next {
+    width: 100%;
+    margin: 0;
 }
