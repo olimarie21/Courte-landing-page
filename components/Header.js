@@ -67,6 +67,8 @@ const HeaderContainer = styled.div`
 	left: 0;
 	background: ${globalColor.grey0};
 	z-index: 4;
+	max-width: 900px;
+	
 
 	position: ${(props) => (props.secondary ? 'sticky' : 'relative')};
 	flex-direction: @media screen and (min-width: 768px) {

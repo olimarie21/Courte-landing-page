@@ -149,7 +149,7 @@ const TeamWrapper = styled.div`
 max-width: 900px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-self: center;
     justify-content: center;
     margin-top: 10vh;
     margin-bottom: 8.7vh;
