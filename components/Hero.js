@@ -16,7 +16,7 @@ const Hero = () => {
 				<h1>Discover a better way to play tennis.</h1>
 				<DescriptiveText className='descriptiveText'>
 					Courte is a mobile application that offers a comprehensive solution to
-					facilitate the use and share of public tennis courts.
+					facilitate the use and sharing of public tennis courts.
 				</DescriptiveText>
 				<div className='buttonWrapper'>
 					<a href='#about'>

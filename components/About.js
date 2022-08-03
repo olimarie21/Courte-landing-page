@@ -22,9 +22,9 @@ const About = () => {
 					A solution tailored for public tennis courts.
 				</HeadLine>
 				<DescriptiveText className='descriptiveText'>
-					In-person arrangements to share public tennis courts is not practical.
-					Courte is here to help make using and sharing the court as easy as the
-					press of a button.
+					In-person arrangements to share public tennis courts are not
+					practical. Courte is here to help make using and sharing the court as
+					easy as the press of a button.
 				</DescriptiveText>
 				<div className='buttonWrapper'>
 					<a
