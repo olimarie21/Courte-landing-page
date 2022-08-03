@@ -11,44 +11,46 @@ const Header = () => {
 	return (
 		<>
 			<HeaderContainer secondary={showMenu}>
-				<Image
-					width={128}
-					height={24}
-					src={'/images/courte_logo.svg'}
-					alt={'Courte Logo'}
-				/>
-
-				<HamburgerContainer onClick={(e) => setShowMenu(!showMenu)}>
+				<TextContainer>
 					<Image
-						width={30}
-						height={30}
-						src={'/images/hamburger-menu.svg'}
-						alt='Menu icon'
+						width={128}
+						height={24}
+						src={'/images/courte_logo.svg'}
+						alt={'Courte Logo'}
 					/>
-				</HamburgerContainer>
 
-				<DesktopMenu>
-					<MenuItem>
-						<Link href='#features' passHref={true}>
-							<a>Features</a>
-						</Link>
-					</MenuItem>
-					<MenuItem>
-						<Link href='#' passHref={true}>
-							<a>About</a>
-						</Link>
-					</MenuItem>
-					<MenuItem>
-						<Link href='#' passHref={true}>
-							<a>Team</a>
-						</Link>
-					</MenuItem>
-					<MenuItem>
-						<Link href='#' passHref={true}>
-							<a>Contact</a>
-						</Link>
-					</MenuItem>
-				</DesktopMenu>
+					<HamburgerContainer onClick={(e) => setShowMenu(!showMenu)}>
+						<Image
+							width={30}
+							height={30}
+							src={'/images/hamburger-menu.svg'}
+							alt='Menu icon'
+						/>
+					</HamburgerContainer>
+
+					<DesktopMenu>
+						<MenuItem>
+							<Link href='#features' passHref={true}>
+								<a>Features</a>
+							</Link>
+						</MenuItem>
+						<MenuItem>
+							<Link href='#about' passHref={true}>
+								<a>About</a>
+							</Link>
+						</MenuItem>
+						<MenuItem>
+							<Link href='#team' passHref={true}>
+								<a>Team</a>
+							</Link>
+						</MenuItem>
+						<MenuItem>
+							<Link href='#contact' passHref={true}>
+								<a>Contact</a>
+							</Link>
+						</MenuItem>
+					</DesktopMenu>
+				</TextContainer>
 			</HeaderContainer>
 			{showMenu ? (
 				<MobileMenu showMenu={showMenu} setShowMenu={setShowMenu} />
@@ -61,21 +63,25 @@ const HeaderContainer = styled.div`
 	display: flex;
 	max-height: 72px;
 	padding: 24px;
-	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
+	flex-direction: row;
 	top: 0;
 	left: 0;
+	align-items: center;
 	background: ${globalColor.grey0};
 	z-index: 4;
-	max-width: 900px;
-	
 
 	position: ${(props) => (props.secondary ? 'sticky' : 'relative')};
 	flex-direction: @media screen and (min-width: 768px) {
 		position: sticky;
 	}
 `
-
+const TextContainer = styled.div`
+	display: flex;
+	flex-direction: row;
+	width: 900px;
+	justify-content: space-between;
+`
 const DesktopMenu = styled.ul`
 	display: none;
 	@media (min-width: 768px) {

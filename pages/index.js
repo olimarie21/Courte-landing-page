@@ -8,27 +8,27 @@ import Header from '../components/Header'
 import FeatureContainer from '../components/FeatureContainer'
 
 export default function Home() {
-  return (
-    <Container>
-      <Head>
-        <title>Courte</title>
-        <meta
-          name='description'
-          content='Discover a better way to play tennis'
-        />
-        <link rel='icon' href='/CourteIcon.ico' />
-      </Head>
+	return (
+		<Container>
+			<Head>
+				<title>Courte</title>
+				<meta
+					name='description'
+					content='Discover a better way to play tennis'
+				/>
+				<link rel='icon' href='/CourteIcon.ico' />
+			</Head>
 
-      <Wrapper>
-        <Header />
-        <Hero />
-        <FeatureContainer />
-        <About />
-        <Team />
-      </Wrapper>
-      <Footer />
-    </Container>
-  )
+			<Header />
+			<Wrapper>
+				<Hero />
+				<FeatureContainer />
+				<About />
+				<Team />
+			</Wrapper>
+			<Footer />
+		</Container>
+	)
 }
 
 const Wrapper = styled.div`

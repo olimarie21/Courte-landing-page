@@ -16,17 +16,17 @@ const MobileMenu = (props) => {
 							</Link>
 						</MenuItem>
 						<MenuItem onClick={() => setShowMenu(false)}>
-							<Link href='#features' passHref={true}>
+							<Link href='#about' passHref={true}>
 								<a>About</a>
 							</Link>
 						</MenuItem>
 						<MenuItem onClick={() => setShowMenu(false)}>
-							<Link href='#features' passHref={true}>
+							<Link href='#team' passHref={true}>
 								<a>Team</a>
 							</Link>
 						</MenuItem>
 						<MenuItem onClick={() => setShowMenu(false)}>
-							<Link href='#features' passHref={true}>
+							<Link href='#contact' passHref={true}>
 								<a>Contact</a>
 							</Link>
 						</MenuItem>
