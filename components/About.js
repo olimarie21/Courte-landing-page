@@ -50,11 +50,11 @@ const AboutWrapper = styled.div`
 	border-radius: 8px;
 	// padding-right: 6.2vw;
 	// padding-left: 6.2vw;
+	padding: 0 4.8vw 0 4.8vw;
 	padding-bottom: 4.8vh;
 	margin-top: 13.7vh;
 	max-width: 900px;
 	align-self: center;
-	width: 100%;
 
 	@media screen and (min-width: 800px) {
 		flex-direction: row;
@@ -62,6 +62,8 @@ const AboutWrapper = styled.div`
 		// padding-right: 3.2vw;
 		// padding-left: 9.1vw;
 		padding-bottom: 3.9vh;
+		width: 900px;
+		padding: 0 0 4.8vh 0;
 	}
 
 	.imageWrapper {
@@ -69,6 +71,7 @@ const AboutWrapper = styled.div`
 		display: flex;
 		flex-direction: center;
 		max-width: 195px;
+		align-self: center;
 
 		@media screen and (min-width: 800px) {
 			width: 25vw;

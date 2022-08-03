@@ -79,8 +79,12 @@ const HeaderContainer = styled.div`
 const TextContainer = styled.div`
 	display: flex;
 	flex-direction: row;
-	width: 900px;
+	width: 100%;
+	max-width: 900px;
 	justify-content: space-between;
+	@media screen and (min-width: 768px) {
+		width: 900px;
+	}
 `
 const DesktopMenu = styled.ul`
 	display: none;

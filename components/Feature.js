@@ -70,7 +70,13 @@ const ImageContainer = styled.div`
 const FeatureContainer = styled.div`
 	display: flex;
 	flex-direction: column;
-	margin: 0 0 120px 0;
+	margin: ${(props) => {
+		if (props.secondary === 'Match') {
+			return '0 0 0 0'
+		} else {
+			return '0 0 120px 0'
+		}
+	}};
 	text-align: left;
 	@media (min-width: 800px) {
 		flex-direction: row-reverse;
@@ -81,13 +87,7 @@ const FeatureContainer = styled.div`
 				return 'row'
 			}
 		}};
-		margin: ${(props) => {
-			if (props.secondary === 'Match') {
-				return '0 0 0 0'
-			} else {
-				return '0 0 120px 0'
-			}
-		}};
+
 		align-items: center;
 	}
 `
