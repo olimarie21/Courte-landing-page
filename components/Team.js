@@ -160,6 +160,7 @@ const TeamWrapper = styled.div`
 
 			@media (min-width: 800px) {
 				text-align: left;
+				margin-top: 1.9vh;
 			}
 		}
 	}
