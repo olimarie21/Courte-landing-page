@@ -74,7 +74,7 @@ const FeatureContainer = styled.div`
 		if (props.secondary === 'Match') {
 			return '0 0 0 0'
 		} else {
-			return '0 0 120px 0'
+			return '0 0 13.7vh 0'
 		}
 	}};
 	text-align: left;

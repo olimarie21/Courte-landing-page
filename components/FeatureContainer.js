@@ -29,7 +29,7 @@ const FeatureContainer = () => {
 const Container = styled.div`
 	padding: 0;
 	margin: 0;
-	margin-top: 120px;
+	margin-top: 13.7vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
